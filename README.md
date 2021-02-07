@@ -7,6 +7,8 @@ https://coding.imooc.com/class/482.html?mc_marking=bb86c9071ed9b7cf12612a2a85203
 共 1 节 (12分钟) 收起列表
 
  1-1 课程导学 (11:06)试看
+
+ 
 第2章 项目起航：项目初始化与配置
 本章我们将会⽤Create-React-App初始化项⽬。并配置eslint检验代码质量，prettier检 验代码格式，commitlint检验提交信息，使得⼯程规范化。最后会配置⼀个优秀的后端 Mock⽅案，JSON SERVER 第三、四章使⽤Mock，从第五章开始连接真实服务器。...
 
