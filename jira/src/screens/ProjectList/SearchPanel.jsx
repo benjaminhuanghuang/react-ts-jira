@@ -1,20 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-function SearchPanel() {
-  const [param, setParam] = useState({
-    name: "",
-    personId: "",
-  });
-  const [users, setUsers] = useState([]);
-  const [list, setList] = useState([]);
-
-  useEffect(()=>{
-    fetch('').then(async response=> {
-      if(response.ok){
-        setList(await response.json())
-      }
-    })
-  },[param]);
+function SearchPanel({ users, param, setParam }) {
   return (
     <form>
       <div>
@@ -39,12 +25,10 @@ function SearchPanel() {
             });
           }}
         >
-        <option value="">owner</option>
-            {
-              users.map((user)=>(
-                <option value={user.id}>{user.name}</option>
-              ))
-            }
+          <option value="">owner</option>
+          {users.map((user) => (
+            <option value={user.id}>{user.name}</option>
+          ))}
         </select>
       </div>
     </form>
