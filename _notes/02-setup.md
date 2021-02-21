@@ -9,10 +9,47 @@
 ```
 
 ## 2-2 配置 eslint、 prettier 和 commitlint 规范工程 (08:56)
+- Fix the import path
+在 tsconfig.json中添加
+```
+  "baseUrl": "./src"
+```
+import file will base on this path
+
+- prettier
+```
+  npm i -D prettier
+
+  echo {} > .prettierric.json
+  touch .prettierignore
+```
+
+- husky
+hook when comit
+```
+  # Install husky, lint-staged
+  # create config in package.json
+  npx mrm lint-staged    
+```
+
+- eslint
+```
+  npm i -D eslint-config-prettier
+```
+add prettier to eslint extends config
+
+- commitlint
+```
+  npm i -D @commitlint/{config-conventional,cli}
+```
+add commitlint to husky config
+
+
 
 ## 2-3 对比常见 Mock 方案 配置 JSON SERVER (10:53)
 Mock.js
   随机假数据， 只支持 ajax
+
 
 swagger/moco/rap/yapi
 
@@ -20,6 +57,8 @@ swagger/moco/rap/yapi
 json-server
 ```
   npm i json-server -g
+
+  json-server --watch db.json
 ```
 
 

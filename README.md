@@ -18,6 +18,7 @@ https://coding.imooc.com/class/482.html?mc_marking=bb86c9071ed9b7cf12612a2a85203
  2-2 配置 eslint、 prettier 和 commitlint 规范工程 (08:56)
  2-3 对比常见 Mock 方案 配置 JSON SERVER (10:53)
  2-4 【注意了】大家不用再手动引入 React 了
+ 
 第3章 React 与 Hook 应用：实现项目列表
 本章专注于React，⾸先我们会使⽤React的基础知识：组件、JSX、列表渲染实现⼯程 列表⻚⾯，让⼤家可以回顾React基础知识的使⽤。然后学习⽤状态提升共享组件状态。 最后学习⽤⾃定义Hook抽象代码，并实现第⼀个⾃定义Hook-useDebounce。...
 
