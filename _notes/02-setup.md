@@ -25,7 +25,7 @@ import file will base on this path
 ```
 
 - husky
-hook when comit
+hook when commit
 ```
   # Install husky, lint-staged
   # create config in package.json

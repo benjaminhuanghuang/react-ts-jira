@@ -1,25 +1,24 @@
-import React from 'react'
+import React from "react";
 
-function List({users, list}) {
+function List({ users, list }) {
   return (
     <table>
       <thead>
-        <tr><th>Name</th></tr>
-        <tr><th>Owner</th></tr>
+        <tr>
+          <th>Name</th>
+          <th>Owner</th>
+        </tr>
       </thead>
       <tbody>
-        {
-          list.map((project:any)=>(
-            <tr>
-              <td>{project.name}</td>
-              <td>{users.find(user=> user.id===project.personId)?.name||'Unknow'}</td>
-            </tr>
-          ))
-        }
+        {list.map((project, i) => (
+          <tr key={i}>
+            <td>{project.name}</td>
+            <td>{users.find((user) => user.id === project.personId)?.name || "Unknow"}</td>
+          </tr>
+        ))}
       </tbody>
     </table>
-  )
+  );
 }
 
-export default List
-  
+export default List;
