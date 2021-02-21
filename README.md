@@ -1,4 +1,4 @@
-# React17+React Hook+TS4 最佳实践 仿 Jira 企业级项目
+# React17+React Hook+TS4 最佳实践 仿 Jira 企业级项目 (2021)
 https://coding.imooc.com/class/482.html?mc_marking=bb86c9071ed9b7cf12612a2a85203372&mc_channel=hk
 
 第1章 课程介绍(了解本课程必看) 试看

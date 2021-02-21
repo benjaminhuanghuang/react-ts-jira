@@ -4,9 +4,24 @@
 共 4 节 (28分钟) 收起列表
 
 ## 2-1 用 Create React App 初始化项目 (07:16)
+```
+  npx create-react-app jira --template typescript
+```
 
 ## 2-2 配置 eslint、 prettier 和 commitlint 规范工程 (08:56)
 
 ## 2-3 对比常见 Mock 方案 配置 JSON SERVER (10:53)
+Mock.js
+  随机假数据， 只支持 ajax
+
+swagger/moco/rap/yapi
+
+
+json-server
+```
+  npm i json-server -g
+```
+
+
 
 ## 2-4 【注意了】大家不用再手动引入 React 了
