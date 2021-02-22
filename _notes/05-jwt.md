@@ -32,7 +32,8 @@ AuthedApp and UnauthedApp
 
 
 ## 5-7 用fetch抽象通用HTTP请求方法，增强通用性 (13:15)
- 
+Attach token
+
 ## 5-8 用useHttp管理JWT和登录状态，保持登录状态 (10:04)试看
 
 ## 5-9 TS的联合类型、Partial和Omit介绍 (13:28)
