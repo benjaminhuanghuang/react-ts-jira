@@ -18,6 +18,7 @@
     "web-vitals": "^1.0.1"
   },
   "devDependencies": {
+    "@types/qs": "^6.9.5",
     "concurrently": "^6.0.0",
     "json-server": "^0.16.3"
   },

@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 
 import SearchPanel from './SearchPanel'
 import List from './List'
-import * as qs from 'qs'
+import qs from 'qs'
 
 import {cleanObject, useDebounce} from '../../utils'
 

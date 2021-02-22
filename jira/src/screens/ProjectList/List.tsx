@@ -1,6 +1,18 @@
 import React from "react";
 
-function List({ users, list }) {
+import {User} from './SearchPanel'
+interface Project {
+  id:string;
+  name:string;
+  personId:string;
+  pin:string;
+  organization:string;
+}
+interface ListProps{
+  list:Project[],
+  users:User[]
+}
+function List({ users, list }:ListProps) {
   return (
     <table>
       <thead>
