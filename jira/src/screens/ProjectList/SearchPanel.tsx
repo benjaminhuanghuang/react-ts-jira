@@ -1,22 +1,23 @@
 import React, { useState, useEffect } from "react";
 
-export interface User{
-  id:string;
-  name:string;
-  email:string;
-  title:string;
-  organization:string;
+export interface User {
+  id: string;
+  name: string;
+  email: string;
+  title: string;
+  organization: string;
+  token: string;
 }
 
 interface SearchPanelProps {
-  users: User[],
-  param :{
-    name:string,
-    personId: string,
-  },
-  setParam: (param: SearchPanelProps['param']) =>void
+  users: User[];
+  param: {
+    name: string;
+    personId: string;
+  };
+  setParam: (param: SearchPanelProps["param"]) => void;
 }
-function SearchPanel({ users, param, setParam }:SearchPanelProps) {
+function SearchPanel({ users, param, setParam }: SearchPanelProps) {
   return (
     <form>
       <div>
@@ -43,7 +44,9 @@ function SearchPanel({ users, param, setParam }:SearchPanelProps) {
         >
           <option value="">owner</option>
           {users.map((user) => (
-            <option value={user.id} key={user.id}>{user.name}</option>
+            <option value={user.id} key={user.id}>
+              {user.name}
+            </option>
           ))}
         </select>
       </div>

@@ -8,17 +8,31 @@ Good!
 json-server middleware
 
 ## 5-2 连接真实服务端 - 专属开发者⼯具介绍与安装 (08:20)
+Install jira-dev-tool. It is backend server based on `Service Worker`
+
 ```
   npx imooc-jira-tool
 ```
 ```
   import {loadDevTools} from 'jira-dev-tools'
 ```
+从此就不需要 json-server 了
+
 ## 5-3 来自讲师的重要提示：5-2 补充 (00:37)
+
 ## 5-4 JWT原理与auth-provider实现 (07:51)
+Good!
+
 ## 5-5 用useContext存储全局用户信息 (13:49)
+Good!
+
+
 ## 5-6 用useAuth切换登录与非登录状态 (06:04)
+
 ## 5-7 用fetch抽象通用HTTP请求方法，增强通用性 (13:15)
+ 
 ## 5-8 用useHttp管理JWT和登录状态，保持登录状态 (10:04)试看
+
 ## 5-9 TS的联合类型、Partial和Omit介绍 (13:28)
+
 ## 5-10 TS的Utility Types-Pick、Exclude、Partial和Omit实现 (08:58)
