@@ -28,6 +28,8 @@ Good!
 
 
 ## 5-6 用useAuth切换登录与非登录状态 (06:04)
+AuthedApp and UnauthedApp
+
 
 ## 5-7 用fetch抽象通用HTTP请求方法，增强通用性 (13:15)
  

@@ -1,5 +1,5 @@
 import React, { FormEvent } from "react";
-import { useAuth } from "../../context/auth-context";
+import { useAuth } from "../context/auth-context";
 
 function LoginScreen() {
   const { login, user } = useAuth();
