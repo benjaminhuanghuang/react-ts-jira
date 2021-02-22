@@ -19,7 +19,7 @@ export const ProjectListScreen = ()=>
 
   const [list, setList] = useState([]);
   const [users, setUsers] = useState([]);
-  const debouncedParame = useDebounce(param, 2000)
+  const debouncedParame = useDebounce(param, 200)
 
   useEffect(()=>{
     fetch(`${apiURL}/projects?${qs.stringify(cleanObject(param))}`).then(async response=> {

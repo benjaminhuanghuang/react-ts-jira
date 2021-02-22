@@ -1,8 +1,8 @@
-import {useState, useEffect} from 'react'
+import { useState, useEffect } from "react";
 
-export const isFalsy = (val:any) => val === 0 ? false : !val;
+export const isFalsy = (val: unknown) => (val === 0 ? false : !val);
 
-export const cleanObject = (obj:object) => {
+export const cleanObject = (obj: object) => {
   // Object.assign({}, object);
   const result = { ...obj };
   Object.keys(obj).forEach((key) => {
@@ -11,20 +11,18 @@ export const cleanObject = (obj:object) => {
     if (isFalsy(val)) {
       // @ts-ignore
       delete result[key];
-    } 
+    }
   });
-  return result
+  return result;
 };
 
+export const useMount = (callback: () => void) => {
+  useEffect(() => {
+    callback();
+  }, []);
+};
 
-export const useMount = (callback:()=>void) =>{
-  useEffect(()=>{
-    callback()
-  }, [])
-} 
-
-
-export const useDebounce = (value: any, delay?:number) => {
+export const useDebounce = <V>(value: V, delay?: number) => {
   const [debouncedValue, setDebouncedValue] = useState(value);
 
   useEffect(() => {
