@@ -1,4 +1,5 @@
 import React from "react";
+import { Table, Column, Button } from "antd";
 
 import {User} from './SearchPanel'
 interface Project {
@@ -14,22 +15,18 @@ interface ListProps{
 }
 function List({ users, list }:ListProps) {
   return (
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Owner</th>
-        </tr>
-      </thead>
-      <tbody>
-        {list.map((project, i) => (
-          <tr key={i}>
-            <td>{project.name}</td>
-            <td>{users.find((user) => user.id === project.personId)?.name || "Unknow"}</td>
-          </tr>
-        ))}
-      </tbody>
-    </table>
+    <Table pagination={false} dataSource={list} columns={[{
+      title:'name',
+      dataIndex:'name',
+      sorter:(a, b)=> a.name.localeCompare(b.name)
+    },{
+      title:'owner',
+      render(value, project){
+        return <span>{users.find((user) => user.id === project.personId)?.name || "Unknow"}</span>
+      }
+    }]} >  
+     
+    </Table>
   );
 }
 

@@ -43,5 +43,7 @@ const bootstrapUser = async () => {
 ```
 
 ## 5-9 TS的联合类型、Partial和Omit介绍 (13:28)
+Good !
 
 ## 5-10 TS的Utility Types-Pick、Exclude、Partial和Omit实现 (08:58)
+Good !

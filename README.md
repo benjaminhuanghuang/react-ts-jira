@@ -67,6 +67,7 @@ CSS 是很多同学头疼的技术，本章将会分析传统CSS难以掌握的�
  6-5 用CSS-in-JS状态工程创建自定义组件：Row组件实现 (07:47)
  6-6 完善项目列表页面样式 (10:27)
  6-7 清除前面课程留下的警告信息 (11:00)
+ 
 第7章 用户体验优化 - 加载中和错误状态处理
 加载中和错误状态处理是对⽤⼾体验⾮常重要⼀环，本章我们将处理登录注册和项⽬列表 ⻚⾯，并抽象出⼀个通⽤的处理异步操作的Hook-useAsync。最后将学习使⽤React 的⾼级特性 - Error Boundaries 来捕捉渲染错误。
 
@@ -77,7 +78,7 @@ CSS 是很多同学头疼的技术，本章将会分析传统CSS难以掌握的�
  7-3 登录注册页面Loading和Error状态处理，与Event Loop详解 (20:10)
  7-4 用useAsync获取用户信息 (06:33)
  7-5 实现Error Boundaries，捕获边界错误 (14:17)
- 
+
 第8章 Hook，路由，与 URL 状态管理
 在本章首先会实现管理文档标题的 hook - useDocumentTitle，在实现它的过程中将学习Hook的高阶知识 — 闭包与Hook，并学习useRef的使用情境与方法。 然后会讲解React Router6的使⽤，以及如何实现 useUrlQueryParam 来对 URL 进⾏状态管理。在实现 useUrlQueryParam 的过程中，将引出如何避免Hook无限循环与 ...
 

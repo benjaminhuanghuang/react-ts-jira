@@ -1,3 +1,4 @@
+import { Select } from "antd";
 import React, { useState, useEffect } from "react";
 
 export interface User {
@@ -31,24 +32,22 @@ function SearchPanel({ users, param, setParam }: SearchPanelProps) {
             })
           }
         />
-        <select
-          name=""
-          id=""
+        <Select
           value={param.personId}
-          onChange={(event) => {
+          onChange={(value) => {
             setParam({
               ...param,
-              personId: event.target.value,
+              personId: value,
             });
           }}
         >
-          <option value="">owner</option>
+          <Select.Option value="">owner</Select.Option>
           {users.map((user) => (
-            <option value={user.id} key={user.id}>
+            <Select.Option value={user.id} key={user.id}>
               {user.name}
-            </option>
+            </Select.Option>
           ))}
-        </select>
+        </Select>
       </div>
     </form>
   );
