@@ -8,7 +8,12 @@ Good!
 json-server middleware
 
 ## 5-2 连接真实服务端 - 专属开发者⼯具介绍与安装 (08:20)
-
+```
+  npx imooc-jira-tool
+```
+```
+  import {loadDevTools} from 'jira-dev-tools'
+```
 ## 5-3 来自讲师的重要提示：5-2 补充 (00:37)
 ## 5-4 JWT原理与auth-provider实现 (07:51)
 ## 5-5 用useContext存储全局用户信息 (13:49)
