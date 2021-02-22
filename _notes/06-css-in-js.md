@@ -16,6 +16,7 @@ include css in index page
 ## 6-3 最受欢迎的CSS-in-JS方案 - Emotion的安装与使用 (15:52)
 
 ## 6-4 用Grid和Flexbox布局优化项目列表页面 (17:57)
+Good !
 
 ## 6-5 用CSS-in-JS状态工程创建自定义组件：Row组件实现 (07:47)
 
