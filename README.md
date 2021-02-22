@@ -77,6 +77,7 @@ CSS 是很多同学头疼的技术，本章将会分析传统CSS难以掌握的�
  7-3 登录注册页面Loading和Error状态处理，与Event Loop详解 (20:10)
  7-4 用useAsync获取用户信息 (06:33)
  7-5 实现Error Boundaries，捕获边界错误 (14:17)
+ 
 第8章 Hook，路由，与 URL 状态管理
 在本章首先会实现管理文档标题的 hook - useDocumentTitle，在实现它的过程中将学习Hook的高阶知识 — 闭包与Hook，并学习useRef的使用情境与方法。 然后会讲解React Router6的使⽤，以及如何实现 useUrlQueryParam 来对 URL 进⾏状态管理。在实现 useUrlQueryParam 的过程中，将引出如何避免Hook无限循环与 ...
 

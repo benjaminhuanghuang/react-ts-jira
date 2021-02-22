@@ -35,6 +35,12 @@ AuthedApp and UnauthedApp
 Attach token
 
 ## 5-8 用useHttp管理JWT和登录状态，保持登录状态 (10:04)试看
+```
+// load token from localStorage
+const bootstrapUser = async () => {
+
+}
+```
 
 ## 5-9 TS的联合类型、Partial和Omit介绍 (13:28)
 

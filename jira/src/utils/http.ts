@@ -8,7 +8,7 @@ interface Config extends RequestInit {
   data?: object;
 }
 
-export const http = async (endpoint: string, { data, token, header, ...customConfig }: Config) => {
+export const http = async (endpoint: string, { data, token, headers, ...customConfig }: Config={}) => {
   const config = {
     method: "GET", // default method, will be overwrittin by customConfig
     headers: {
@@ -37,3 +37,10 @@ export const http = async (endpoint: string, { data, token, header, ...customCon
     }
   });
 };
+
+
+export const useHttp = ()=>{
+  const {user} = useAuth()
+
+  return (...[endpoint, config]:[string, Config])=>http(endpoint, {...config, token:user?.token})
+}
